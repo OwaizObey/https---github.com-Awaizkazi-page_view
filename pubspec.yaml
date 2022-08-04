@@ -37,7 +37,8 @@ dependencies:
   introduction_screen: ^3.0.2
   smooth_page_indicator: ^1.0.0+2
   intl_phone_number_input: ^0.7.0+2
-  otp_screen: ^0.0.3 
+  otp_screen: ^0.0.3
+  
 
 dev_dependencies:
   flutter_test:
