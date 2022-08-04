@@ -44,12 +44,18 @@ class _otpVerifyState extends State<otpVerify> {
                   ),
                 ),
                 Container(
+                  padding: EdgeInsets.all(32.0),
                   child: Row(
                     children: [
                       SizedBox(
-                        height: 68,
-                        width: 64,
+                        height: 70,
+                        width: 50,
                         child: TextFormField(
+                          decoration: InputDecoration(
+                            fillColor: Colors.blue,
+                            border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(8.0)),
+                          ),
                           style: Theme.of(context).textTheme.headline6,
                           keyboardType: TextInputType.number,
                           textAlign: TextAlign.center,
@@ -60,9 +66,16 @@ class _otpVerifyState extends State<otpVerify> {
                         ),
                       ),
                       SizedBox(
-                        height: 68,
-                        width: 64,
+                        width: 8,
+                      ),
+                      SizedBox(
+                        height: 70,
+                        width: 50,
                         child: TextFormField(
+                          decoration: InputDecoration(
+                            border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(8.0)),
+                          ),
                           style: Theme.of(context).textTheme.headline6,
                           keyboardType: TextInputType.number,
                           textAlign: TextAlign.center,
@@ -73,9 +86,16 @@ class _otpVerifyState extends State<otpVerify> {
                         ),
                       ),
                       SizedBox(
-                        height: 68,
-                        width: 64,
+                        width: 8,
+                      ),
+                      SizedBox(
+                        height: 70,
+                        width: 50,
                         child: TextFormField(
+                          decoration: InputDecoration(
+                            border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(8.0)),
+                          ),
                           style: Theme.of(context).textTheme.headline6,
                           keyboardType: TextInputType.number,
                           textAlign: TextAlign.center,
@@ -86,9 +106,16 @@ class _otpVerifyState extends State<otpVerify> {
                         ),
                       ),
                       SizedBox(
-                        height: 68,
-                        width: 64,
+                        width: 8,
+                      ),
+                      SizedBox(
+                        height: 70,
+                        width: 50,
                         child: TextFormField(
+                          decoration: InputDecoration(
+                            border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(8.0)),
+                          ),
                           style: Theme.of(context).textTheme.headline6,
                           keyboardType: TextInputType.number,
                           textAlign: TextAlign.center,
@@ -99,9 +126,17 @@ class _otpVerifyState extends State<otpVerify> {
                         ),
                       ),
                       SizedBox(
-                        height: 68,
-                        width: 64,
+                        width: 8,
+                      ),
+                      SizedBox(
+                        height: 70,
+                        width: 50,
                         child: TextFormField(
+                          decoration: InputDecoration(
+                            border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(8.0)),
+                            // hintText: 'Please enter a search term'
+                          ),
                           style: Theme.of(context).textTheme.headline6,
                           keyboardType: TextInputType.number,
                           textAlign: TextAlign.center,
@@ -112,9 +147,17 @@ class _otpVerifyState extends State<otpVerify> {
                         ),
                       ),
                       SizedBox(
-                        height: 68,
-                        width: 64,
+                        width: 8,
+                      ),
+                      SizedBox(
+                        height: 70,
+                        width: 50,
                         child: TextFormField(
+                          decoration: InputDecoration(
+                            border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(8.0)),
+                            // hintText: 'Please enter a search term'
+                          ),
                           style: Theme.of(context).textTheme.headline6,
                           keyboardType: TextInputType.number,
                           textAlign: TextAlign.center,
@@ -127,9 +170,42 @@ class _otpVerifyState extends State<otpVerify> {
                     ],
                   ),
                 ),
-                // SizedBox(
-                //   height: 300,
-                // ),
+                Center(
+                  child: Text(
+                    '00 : 30',
+                    style: TextStyle(
+                      fontSize: 30,
+                      color: Colors.black54,
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 15,
+                ),
+                Center(
+                  child: Text(
+                    "Didn't get it ?",
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.black,
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 15,
+                ),
+                Center(
+                  child: Text(
+                    "Resend OTP",
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.black,
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 30,
+                ),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(
