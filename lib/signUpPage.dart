@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl_phone_number_input/intl_phone_number_input.dart';
+import 'package:page_view/otp_verify.dart';
 
 class SignUpPage extends StatefulWidget {
   const SignUpPage({Key? key}) : super(key: key);
@@ -81,9 +82,12 @@ class _SignUpPageState extends State<SignUpPage> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(6),
                     ),
-                    minimumSize: Size(320, 60),
+                    minimumSize: Size(300, 60),
                   ),
-                  onPressed: () {},
+                  onPressed: (() {
+                    Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => otpVerify()));
+                  }),
                   child: Text(
                     'Continue',
                     style: TextStyle(fontSize: 20),
