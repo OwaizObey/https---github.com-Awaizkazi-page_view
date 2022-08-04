@@ -85,7 +85,7 @@ class _SignUpPageState extends State<SignUpPage> {
                   ),
                   onPressed: () {},
                   child: Text(
-                    'Continue',
+                    'Continues',
                     style: TextStyle(fontSize: 20),
                   ),
                 ),
